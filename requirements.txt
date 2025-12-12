@@ -1,0 +1,39 @@
+# Core AI and ML
+torch>=2.0.0
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+
+# Async and networking
+asyncio>=3.4.3
+aiohttp>=3.8.0
+websockets>=11.0
+
+# Configuration and utilities
+pyyaml>=6.0
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+
+# Logging and monitoring
+structlog>=23.1.0
+colorlog>=6.7.0
+
+# Trading and finance
+ccxt>=4.0.0
+yfinance>=0.2.0
+ta-lib>=0.4.0
+
+# Voice AI (optional, can be disabled)
+pyttsx3>=2.90
+SpeechRecognition>=3.10.0
+
+# GPU acceleration (optional)
+cupy-cuda12x>=12.0.0; sys_platform != "darwin"
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.1.0
+
+# Security
+cryptography>=41.0.0

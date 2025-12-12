@@ -1,0 +1,29 @@
+2025-12-12 12:21:16 - src.utils.config_manager - INFO - Loaded system configuration from system_config.yaml
+2025-12-12 12:21:16 - src.utils.config_manager - INFO - Loaded trading configuration from trading_config.yaml
+2025-12-12 12:21:16 - asyncio - DEBUG - Using selector: EpollSelector
+2025-12-12 12:21:16 - __main__ - INFO - Testing core imports...
+2025-12-12 12:21:16 - __main__ - INFO - ✓ All imports successful
+2025-12-12 12:21:16 - __main__ - INFO - Testing basic functionality...
+2025-12-12 12:21:16 - src.ai.multi_agent_system.AgentManager - INFO - Registered agent: quantum_finance
+2025-12-12 12:21:16 - src.ai.multi_agent_system.AgentManager - INFO - Registered agent: pattern_analytics
+2025-12-12 12:21:16 - src.ai.multi_agent_system.AgentManager - INFO - Registered agent: poker_logic
+2025-12-12 12:21:16 - src.ai.multi_agent_system.AgentManager - INFO - Registered agent: strategy_analyzer
+2025-12-12 12:21:16 - src.ai.multi_agent_system - INFO - Initialized 4 agents
+2025-12-12 12:21:16 - src.ai.multi_agent_system - INFO - Orion Phi-4 Engine initialized
+2025-12-12 12:21:16 - __main__ - INFO - ✓ Engine instantiation successful
+2025-12-12 12:21:16 - src.ai.multi_agent_system - INFO - Starting Orion Phi-4 Engine...
+2025-12-12 12:21:16 - src.ai.agents.base_agent.quantum_finance - INFO - Agent quantum_finance started
+2025-12-12 12:21:16 - src.ai.agents.base_agent.pattern_analytics - INFO - Agent pattern_analytics started
+2025-12-12 12:21:16 - src.ai.agents.base_agent.poker_logic - INFO - Agent poker_logic started
+2025-12-12 12:21:16 - src.ai.agents.base_agent.strategy_analyzer - INFO - Agent strategy_analyzer started
+2025-12-12 12:21:16 - src.ai.multi_agent_system.AgentManager - INFO - All agents started
+2025-12-12 12:21:16 - src.ai.multi_agent_system - INFO - Orion Phi-4 Engine started successfully
+2025-12-12 12:21:16 - __main__ - INFO - ✓ Engine start successful
+2025-12-12 12:21:16 - src.ai.multi_agent_system - INFO - Stopping Orion Phi-4 Engine...
+2025-12-12 12:21:16 - src.ai.agents.base_agent.quantum_finance - INFO - Agent quantum_finance stopped
+2025-12-12 12:21:16 - src.ai.agents.base_agent.pattern_analytics - INFO - Agent pattern_analytics stopped
+2025-12-12 12:21:16 - src.ai.agents.base_agent.poker_logic - INFO - Agent poker_logic stopped
+2025-12-12 12:21:16 - src.ai.agents.base_agent.strategy_analyzer - INFO - Agent strategy_analyzer stopped
+2025-12-12 12:21:16 - src.ai.multi_agent_system.AgentManager - INFO - All agents stopped
+2025-12-12 12:21:16 - src.ai.multi_agent_system - INFO - Orion Phi-4 Engine stopped
+2025-12-12 12:21:16 - __main__ - INFO - ✓ Engine stop successful

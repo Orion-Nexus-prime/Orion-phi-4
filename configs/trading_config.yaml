@@ -1,0 +1,87 @@
+# Orion Phi-4 Trading Configuration
+
+# Portfolio settings
+portfolio:
+  initial_capital: 100000
+  max_positions: 10
+  position_sizing_method: kelly
+  
+# Risk management
+risk:
+  max_portfolio_risk: 0.02  # 2% max risk
+  max_position_risk: 0.01   # 1% per position
+  max_drawdown: 0.15        # 15% max drawdown
+  stop_loss_pct: 0.05       # 5% stop loss
+  take_profit_pct: 0.10     # 10% take profit
+  
+  # Position limits
+  max_leverage: 2.0
+  max_concentration: 0.20   # 20% max in single position
+
+# Trading strategies configuration
+strategies:
+  quantum_mean_reversion:
+    enabled: true
+    weight: 0.30
+    lookback_period: 20
+    std_threshold: 2.0
+    quantum_iterations: 100
+    
+  neuro_synthetic:
+    enabled: true
+    weight: 0.25
+    model_type: lstm
+    sequence_length: 50
+    hidden_layers: [128, 64, 32]
+    
+  dark_pool_predictor:
+    enabled: true
+    weight: 0.25
+    detection_threshold: 0.7
+    volume_multiplier: 1.5
+    
+  volatility_arbitrage:
+    enabled: true
+    weight: 0.20
+    implied_vol_threshold: 0.15
+    historical_vol_window: 30
+
+# Market data settings
+market_data:
+  symbols:
+    - BTC/USDT
+    - ETH/USDT
+    - SPY
+    - QQQ
+  
+  exchanges:
+    - binance
+    - coinbase
+    
+  update_interval_seconds: 5
+  cache_duration_seconds: 60
+
+# Execution settings
+execution:
+  order_type: limit
+  slippage_tolerance: 0.001  # 0.1%
+  timeout_seconds: 30
+  retry_attempts: 3
+  
+# Backtesting settings
+backtesting:
+  start_date: "2023-01-01"
+  end_date: "2024-01-01"
+  commission: 0.001  # 0.1%
+  slippage: 0.0005   # 0.05%
+
+# Paper trading settings
+paper_trading:
+  enabled: true
+  initial_balance: 100000
+  
+# Live trading settings (use with caution!)
+live_trading:
+  enabled: false
+  api_key_env: EXCHANGE_API_KEY
+  api_secret_env: EXCHANGE_API_SECRET

@@ -1,0 +1,65 @@
+# Orion Phi-4 System Configuration
+
+# Logging settings
+logging:
+  level: INFO
+  console_output: true
+  file_output: true
+  log_dir: logs
+
+# Multi-Agent System settings
+agents:
+  max_concurrent: 5
+  timeout_seconds: 30
+  retry_attempts: 3
+  
+  # Individual agent settings
+  quantum_finance:
+    enabled: true
+    priority: high
+    
+  pattern_analytics:
+    enabled: true
+    priority: high
+    
+  poker_logic:
+    enabled: true
+    priority: medium
+    
+  voice_ai:
+    enabled: false  # Disabled by default, requires audio hardware
+    priority: low
+    
+  strategy_analyzer:
+    enabled: true
+    priority: high
+
+# Orchestrator settings
+orchestrator:
+  consensus_threshold: 0.7
+  voting_method: weighted
+  timeout_seconds: 10
+
+# GPU/CUDA settings
+cuda:
+  enabled: false  # Set to true if CUDA is available
+  device_id: 0
+  memory_fraction: 0.8
+
+# Memory management
+memory:
+  cache_size_mb: 512
+  max_history_items: 10000
+  cleanup_interval_seconds: 300
+
+# Security settings
+security:
+  encryption_enabled: true
+  key_rotation_days: 30
+  secure_mode: true
+
+# Performance settings
+performance:
+  max_workers: 4
+  batch_size: 100
+  async_mode: true
